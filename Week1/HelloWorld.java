@@ -16,6 +16,15 @@ public class HelloWorld {//This is the start of the class
 	//this is what runs
 	public static void main(String[] args) {//This is the start of main
 		
+		//The system library can be used for input and output
+
+		System.out.println("Hello World");
+
+		//println() creates a new line and prints to the console.
+		//print() does not create a new line
+		System.out.print("Did not create");
+		System.out.print("a new line");
+
 		
 	}//This is the end of main
 	
