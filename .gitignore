@@ -23,3 +23,15 @@
 hs_err_pid*
 replay_pid*
 /bin/
+
+# Compiled class files
+*.class
+
+# Eclipse project files
+.project
+.classpath
+.settings/
+
+# Eclipse metadata
+.metadata/
+bin/
