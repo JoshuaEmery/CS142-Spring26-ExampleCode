@@ -1,5 +1,7 @@
 # CS 142 — Spring 2026 Example Code Repository
 
+![Tacoma Community College](logo.png)
+
 This repository contains the example code written during class each week.
 To view the source code for a given week, click on the folder for that week (e.g. `Week1`).
 Code is added throughout the quarter as we cover each topic in class.
