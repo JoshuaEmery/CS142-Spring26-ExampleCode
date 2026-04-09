@@ -39,7 +39,7 @@ public class IntroToMethods {
         return;  // execution stops here and jumps back to the caller
 
         // nothing below this line will ever run
-        System.out.println("This line is unreachable");
+        //System.out.println("This line is unreachable");
     }
 
 }
