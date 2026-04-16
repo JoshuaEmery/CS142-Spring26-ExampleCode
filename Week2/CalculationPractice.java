@@ -1,0 +1,150 @@
+public class CalculationPractice {
+
+    public static void main(String[] args) {
+
+
+        // ============================================================
+        // EXERCISE 1 — Temperature Conversion (Fahrenheit to Celsius)
+        // ============================================================
+        // Formula: celsius = (fahrenheit - 32) * 5 / 9
+        // Create a variable to store a temp in fahrenheit, choose any value
+
+
+        // Create a variable to store celsius and calculate the value
+
+
+        // Output the following
+        // fVariable degrees in F is cVariable degrees in C
+
+
+
+
+        // ============================================================
+        // EXERCISE 2 — Rectangle Area and Perimeter
+        // ============================================================
+        // A rectangle has a width and a height.
+        // Area     = width * height
+        // Perimeter = 2 * (width + height)
+
+        //Create variables to store width and height, choose any values
+
+
+        // Create a variable for the Area and calculate it
+
+
+        // Create a variable for the perimeter and calculate it
+
+
+        // Print out the results
+
+
+
+
+        // ============================================================
+        // EXERCISE 3 — Paycheck Calculator
+        // ============================================================
+        // Given hours worked, an hourly wage, and a tax rate:
+        //   grossPay    = hoursWorked * hourlyRate
+        //   taxWithheld = grossPay * taxRate
+        //   netPay      = grossPay - taxWithheld
+
+        // Create variables for hoursWorked, hourlyRate and taxRate
+        // Choose values for them
+
+        // Create a variable called grossPay and calculate it
+
+
+        // Create a variable called taxWithheld and calculate it
+
+
+        // Create a variable called netPay and calculate it
+
+
+        // Print out a paycheck stub (hoursWorked, hourlyRate, grossPay
+        //, taxWithHeld, netPay)
+
+        //For example 80 hours at $15 / hr = $1200
+        //tax rate of 10% = taxWithheld = $120
+        //netPay = $1080
+
+
+
+
+        // ============================================================
+        // EXERCISE 4 — Compound Interest
+        // ============================================================
+        // Formula: A = P * (1 + r/n)^(n*t)
+        //   P — principal (starting amount)
+        //   r — annual interest rate as a decimal (e.g. 5% = 0.05)
+        //   n — number of times interest compounds per year
+        //         annually  =  1
+        //         monthly   = 12
+        //         daily     = 365
+        //   t — number of years
+        //   A — total amount after interest
+        //
+        // To raise a number to a power in Java: Math.pow(base, exponent)
+        // Example: Math.pow(2, 3) gives 8.0
+        // Math.pow gives you a double
+
+        //Create variables for the following and choose values
+        //principal, rate, compoundsPerYear, years
+
+        // create a variable called totalAmount and calculate it
+        // using the formula above. 
+    
+
+
+        // Create a variable called interest earned and calculate it
+
+        // Print out the starting principal, totalAmount and interestEarned
+
+        // For example:
+        // Principal: $1000, Rate: 10% (0.10), compounded annually (n=1), for 1 year
+        // A = 1000 * (1 + 0.10/1)^(1*1)
+        // A = 1000 * (1.10)^1
+        // A = 1000 * 1.10
+        // A = $1100.00
+        // Total Amount = 1100
+        // Interest earned = $1100 - $1000 = $100
+        // Starting principal = 1000
+     
+
+
+
+
+        // ============================================================
+        // EXERCISE 5 — Coin Change (Pennies to Coins)
+        // ============================================================
+        // Given a total number of pennies, calculate how many of each
+        // coin type fit into that amount — use integer division and modulus.
+        //
+        // Coin values in pennies:
+        //   quarter = 25
+        //   dime    = 10
+        //   nickel  =  5
+        //   penny   =  1
+        //
+        // Strategy: Start with the largest coin and move on down.
+
+        //create a variable for the number of pennies and choose a value
+
+
+        // Create an int called numQuarters and calculate it 
+
+
+        // Create an int called numDines and calculate it
+
+
+        // Create an int called numDimes and calculate it
+
+
+        // Output The total number of quarters, dimes, nickels and pennies
+        // that make up the total starting number
+
+        //For example 87 pennies is 3 Quaters 1 Dime 0 Nickels 2 Pennies
+
+
+    }//end main
+
+}//end class
