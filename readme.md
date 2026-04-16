@@ -15,7 +15,7 @@ Code is added throughout the quarter as we cover each topic in class.
 
 ### 1. Office Hours
 
-Office hours are held **Tuesdays before class from 12:30pm to 1:30pm** in Building 16 Room 110.
+Office hours are held **Tuesdays before class from 12:30pm to 1:30pm** in Building 16 Room 206.
 
 ### 2. Tutoring
 
