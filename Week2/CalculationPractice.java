@@ -44,32 +44,36 @@ public class CalculationPractice {
 
 
 
-        // ============================================================
-        // EXERCISE 3 — Paycheck Calculator
-        // ============================================================
-        // Given hours worked, an hourly wage, and a tax rate:
-        //   grossPay    = hoursWorked * hourlyRate
-        //   taxWithheld = grossPay * taxRate
-        //   netPay      = grossPay - taxWithheld
-
-        // Create variables for hoursWorked, hourlyRate and taxRate
-        // Choose values for them
-
-        // Create a variable called grossPay and calculate it
-
-
-        // Create a variable called taxWithheld and calculate it
-
-
-        // Create a variable called netPay and calculate it
-
-
-        // Print out a paycheck stub (hoursWorked, hourlyRate, grossPay
-        //, taxWithHeld, netPay)
-
-        //For example 80 hours at $15 / hr = $1200
-        //tax rate of 10% = taxWithheld = $120
-        //netPay = $1080
+// ============================================================
+		// EXERCISE 3 — Paycheck Calculator
+		// ============================================================
+		// Given hours worked, an hourly wage, and a tax rate:
+		// grossPay = hoursWorked * hourlyRate
+		// taxWithheld = grossPay * taxRate
+		// netPay = grossPay - taxWithheld
+		
+		// Create variables for hoursWorked, hourlyRate and taxRate
+		// Choose values for them
+		double hoursWorked = 40;
+		double hourlyRate = 25;
+		double taxRate = .12;
+		// Create a variable called grossPay and calculate it
+		double grossPay = hoursWorked * hourlyRate;
+		// Create a variable called taxWithheld and calculate it
+		double taxWithheld = grossPay * taxRate;
+		// Create a variable called netPay and calculate it
+		double netPay = grossPay - taxWithheld;
+		// Print out a paycheck stub (hoursWorked, hourlyRate, grossPay
+		// , taxWithHeld, netPay)
+		System.out.println("==========Paycheck Stub==========");
+		System.out.println("Hours Worked: " + hoursWorked);
+		System.out.println("Hourly Rate: " + hourlyRate);
+		System.out.println("Gross Pay: " + grossPay);
+		System.out.println("Tax Withheld: " + taxWithheld);
+		System.out.println("Net Pay: " + netPay);
+		// For example 80 hours at $15 / hr = $1200
+		// tax rate of 10% = taxWithheld = $120
+		// netPay = $1080
 
 
 
