@@ -71,7 +71,30 @@ public class CalculationPractice {
 
 
         // ============================================================
-        // EXERCISE 4 — Compound Interest
+        // EXERCISE 4 — Area of a Circle
+        // ============================================================
+        // Formula: area = PI * radius^2
+        //   PI is available in Java as Math.PI
+        //   To raise a number to a power in Java: Math.pow(base, exponent)
+        //   Example: Math.pow(3, 2) gives 9.0
+
+        // Keep in mind that both Math.PI and Math.pow() are doubles
+
+        // Create a variable to store the radius, choose any value
+
+
+        // Create a variable called area and calculate it
+
+
+        // Print out the radius and the area
+        // For example:
+        // A circle with radius 5 has an area of 78.53981633974483
+
+
+
+
+        // ============================================================
+        // EXERCISE 5 — Compound Interest
         // ============================================================
         // Formula: A = P * (1 + r/n)^(n*t)
         //   P — principal (starting amount)
@@ -114,7 +137,7 @@ public class CalculationPractice {
 
 
         // ============================================================
-        // EXERCISE 5 — Coin Change (Pennies to Coins)
+        // EXERCISE 6 — Coin Change (Pennies to Coins)
         // ============================================================
         // Given a total number of pennies, calculate how many of each
         // coin type fit into that amount — use integer division and modulus.
