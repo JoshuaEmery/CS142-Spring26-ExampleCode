@@ -3,18 +3,21 @@ public class CalculationPractice {
     public static void main(String[] args) {
 
 
-        // ============================================================
-        // EXERCISE 1 — Temperature Conversion (Fahrenheit to Celsius)
-        // ============================================================
-        // Formula: celsius = (fahrenheit - 32) * 5 / 9
-        // Create a variable to store a temp in fahrenheit, choose any value
-
-
-        // Create a variable to store celsius and calculate the value
-
-
-        // Output the following
-        // fVariable degrees in F is cVariable degrees in C
+		// ============================================================
+		// EXERCISE 1 — Temperature Conversion (Fahrenheit to Celsius)
+		// ============================================================
+		// Formula: celsius = (fahrenheit - 32) * 5 / 9
+		// Create a variable to store a temp in fahrenheit, choose any value
+		double f = 212.0;
+		// Create a variable to store celsius and calculate the value
+		//Either the 5 or the 9 must be a double to avoid int division
+		double c = (f - 32) * 5 / 9.0; 
+		// Output the following
+		// fVariable degrees in F is cVariable degrees in C
+		//output using concatenation
+		System.out.println(f + " degrees in F is " + c + " degrees in C");
+		//output using f-strings
+		System.out.printf("%f degrees in F is %f degrees in C", f, c);
 
 
 
