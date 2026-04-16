@@ -22,23 +22,24 @@ public class CalculationPractice {
 
 
 
-        // ============================================================
-        // EXERCISE 2 — Rectangle Area and Perimeter
-        // ============================================================
-        // A rectangle has a width and a height.
-        // Area     = width * height
-        // Perimeter = 2 * (width + height)
+		// ============================================================
+		// EXERCISE 2 — Rectangle Area and Perimeter
+		// ============================================================
+		// A rectangle has a width and a height.
+		// Area = width * height
+		// Perimeter = 2 * (width + height)
 
-        //Create variables to store width and height, choose any values
-
-
-        // Create a variable for the Area and calculate it
-
-
-        // Create a variable for the perimeter and calculate it
-
-
-        // Print out the results
+		// Create variables to store width and height, choose any values
+		double width = 100;
+		double height = 25;
+		// Create a variable for the Area and calculate it
+		double area = width * height;
+		// Create a variable for the perimeter and calculate it
+		double perimeter = 2 * (width + height);
+		// Print out the results
+		System.out.printf("Width: %f Height: %f Area: %f Perimeter %f", width, height, area, perimeter);
+		//Make a new line
+		System.out.println();
 
 
 
