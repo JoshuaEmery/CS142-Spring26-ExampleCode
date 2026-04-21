@@ -56,11 +56,11 @@ public class Methods {
 		System.out.println("Is 15 an adult? " + isAdult(15));
 
 		// argument order matters — matched left to right
-		double result = doubleDivide(10, 2);
-		System.out.println("10 / 2 = " + result);
+		double result = doubleDivide(10, 3);
+		System.out.println("10 / 3 = " + result);
 
 		double flipped = doubleDivide(2, 10);
-		System.out.println("2 / 10 = " + flipped);
+		System.out.println("3 / 10 = " + flipped);
 
 		// you can also pass variables as arguments
 		int hoursWorked = 40;
@@ -73,14 +73,15 @@ public class Methods {
 		// param: celsius
 		// returns: double
 		// formula: fahrenheit = (celsius * 9 / 5) + 32
-		// Call toFahrenheit(100) and print: "100 C is X F"
+		// Call toFahrenheit(100) from main
+		// The display is done in main because we returned
 
 		// EXERCISE 2 — Max of Two Numbers
 		// Write a method called max
 		// params: a, b
 		// returns: whichever is larger
 
-		// EXERCISE 3 — Display Mix of Two Numbers
+		// EXERCISE 3 — Display Min of Two Numbers
 		// Write a method called displayMin
 		// params: a, b
 		// display to the console "The smaller number is " + value
