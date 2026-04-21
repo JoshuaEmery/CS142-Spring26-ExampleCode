@@ -3,69 +3,77 @@ public class CalculationPractice {
     public static void main(String[] args) {
 
 
-        // ============================================================
-        // EXERCISE 1 — Temperature Conversion (Fahrenheit to Celsius)
-        // ============================================================
-        // Formula: celsius = (fahrenheit - 32) * 5 / 9
-        // Create a variable to store a temp in fahrenheit, choose any value
-
-
-        // Create a variable to store celsius and calculate the value
-
-
-        // Output the following
-        // fVariable degrees in F is cVariable degrees in C
-
-
-
-
-        // ============================================================
-        // EXERCISE 2 — Rectangle Area and Perimeter
-        // ============================================================
-        // A rectangle has a width and a height.
-        // Area     = width * height
-        // Perimeter = 2 * (width + height)
-
-        //Create variables to store width and height, choose any values
-
-
-        // Create a variable for the Area and calculate it
-
-
-        // Create a variable for the perimeter and calculate it
-
-
-        // Print out the results
+		// ============================================================
+		// EXERCISE 1 — Temperature Conversion (Fahrenheit to Celsius)
+		// ============================================================
+		// Formula: celsius = (fahrenheit - 32) * 5 / 9
+		// Create a variable to store a temp in fahrenheit, choose any value
+		double f = 212.0;
+		// Create a variable to store celsius and calculate the value
+		//Either the 5 or the 9 must be a double to avoid int division
+		double c = (f - 32) * 5 / 9.0; 
+		// Output the following
+		// fVariable degrees in F is cVariable degrees in C
+		//output using concatenation
+		System.out.println(f + " degrees in F is " + c + " degrees in C");
+		//output using f-strings
+		System.out.printf("%f degrees in F is %f degrees in C", f, c);
 
 
 
 
-        // ============================================================
-        // EXERCISE 3 — Paycheck Calculator
-        // ============================================================
-        // Given hours worked, an hourly wage, and a tax rate:
-        //   grossPay    = hoursWorked * hourlyRate
-        //   taxWithheld = grossPay * taxRate
-        //   netPay      = grossPay - taxWithheld
+		// ============================================================
+		// EXERCISE 2 — Rectangle Area and Perimeter
+		// ============================================================
+		// A rectangle has a width and a height.
+		// Area = width * height
+		// Perimeter = 2 * (width + height)
 
-        // Create variables for hoursWorked, hourlyRate and taxRate
-        // Choose values for them
+		// Create variables to store width and height, choose any values
+		double width = 100;
+		double height = 25;
+		// Create a variable for the Area and calculate it
+		double area = width * height;
+		// Create a variable for the perimeter and calculate it
+		double perimeter = 2 * (width + height);
+		// Print out the results
+		System.out.printf("Width: %f Height: %f Area: %f Perimeter %f", width, height, area, perimeter);
+		//Make a new line
+		System.out.println();
 
-        // Create a variable called grossPay and calculate it
 
 
-        // Create a variable called taxWithheld and calculate it
 
-
-        // Create a variable called netPay and calculate it
-
-
-        // Print out a paycheck stub (hoursWorked, hourlyRate, grossPay
-        //, taxWithHeld, netPay)
-
-        //For example 80 hours at $15 / hr = $1200
-        //tax rate of 10% = taxWithheld = $120
-        //netPay = $1080
+// ============================================================
+		// EXERCISE 3 — Paycheck Calculator
+		// ============================================================
+		// Given hours worked, an hourly wage, and a tax rate:
+		// grossPay = hoursWorked * hourlyRate
+		// taxWithheld = grossPay * taxRate
+		// netPay = grossPay - taxWithheld
+		
+		// Create variables for hoursWorked, hourlyRate and taxRate
+		// Choose values for them
+		double hoursWorked = 40;
+		double hourlyRate = 25;
+		double taxRate = .12;
+		// Create a variable called grossPay and calculate it
+		double grossPay = hoursWorked * hourlyRate;
+		// Create a variable called taxWithheld and calculate it
+		double taxWithheld = grossPay * taxRate;
+		// Create a variable called netPay and calculate it
+		double netPay = grossPay - taxWithheld;
+		// Print out a paycheck stub (hoursWorked, hourlyRate, grossPay
+		// , taxWithHeld, netPay)
+		System.out.println("==========Paycheck Stub==========");
+		System.out.println("Hours Worked: " + hoursWorked);
+		System.out.println("Hourly Rate: " + hourlyRate);
+		System.out.println("Gross Pay: " + grossPay);
+		System.out.println("Tax Withheld: " + taxWithheld);
+		System.out.println("Net Pay: " + netPay);
+		// For example 80 hours at $15 / hr = $1200
+		// tax rate of 10% = taxWithheld = $120
+		// netPay = $1080
 
 
 
