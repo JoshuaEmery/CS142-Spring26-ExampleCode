@@ -82,7 +82,7 @@ public class Exam1Review {
 //
 //
 // -------------------------------------------------------
-// 13. Write the method signature for a static method that
+// Write the method signature for a static method that
 //     takes in a String item name and an int quantity, and
 //     prints a summary line to the console
 //
