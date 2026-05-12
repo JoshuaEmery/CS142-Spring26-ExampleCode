@@ -1,162 +1,106 @@
+import java.util.Random;
+
 public class IntroToWhileLoops {
 
-    public static void main(String[] args) {
+	public static void main(String[] args) {
+		// A loop is a code block that runs repeatedly based on a boolean value
+		
+		//While loop
+		// while(condition){
+		//  code to repeat
+		//}
+		
+		// while is a pre-check loop - Checks before the loop starts
+		// if the condition is false initially it never runs
+		// if the condition never becomes false, you have an infinite loop
+		
+		// three basic parts of a loop
+		// Initialization = creating some variable(s) used by the loop
+		// Condition = Determines how long our loop runs for
+		// Update = Change one or more of the variable(s) involved in the condition
+		
+		int count = 1;
+		while(count <= 5) {
+			//do some work
+			System.out.println("Count: " + count);
+			count++;
+		}
+		//create a while loop that prints out 10,9,8... 1
+		int number = 10;
+		while(number >= 1) {
+			//do some work
+			System.out.println("Counting Down: " + number);
+			number--;
+		}
+		//lets use a while loop to add up all positive numbers 
+		//less than equal to 10 1+2+3+4...10
+		//STEP 1 create a loop with a variable that starts at 1 and goes to 10
+		//and print it out. Once you verify that you have the correct range of values
+		//do the calculation.
+		int i = 1;
+		int total = 0;
+		while(i <= 10) {
+			//System.out.println("i: " + i);
+			//total = total + i;
+			total += i;
+			i++;
+		}
+		//When we exit this loop total will be 1+2+3...10
+		System.out.println("Total: " + total);
+		
+		//I want a loop that contains values that vary from [10-20]
+		//Add all of the odd numbers between [10and20] to a total
+		//Print out all of the even numbers between [10and20]
+		int value = 10;
+		int oddTotal = 0;
+		while(value < 21) {
+			//System.out.println("Value: " + value);
+			if(value % 2 == 0) {
+				System.out.println("Value: " + value);
+			}
+			else {
+				//oddTotal = oddTotal + value
+				oddTotal += value;
+			}
+			value++;
+		}
+		System.out.println("Odd total: " + oddTotal);
+		
+		//Break and Continue
+		// break keyword immediately exits a loop
+		// continue skips to the next iteration
+		int counter = 1;
+		//infinite loop
+		while(true) {
+			//when counter gets to 5 we leave
+			if(counter == 5) {
+				break;
+			}
+			counter++;
+			//if counter is 2 we don't print to the console
+			if(counter == 2) {
+				continue;
+			}
+			System.out.println("Break - Continue Demo: " + counter);
+		}
+		
+		//Lets win the powerball 
+		//1. Make an instance of the Random class
+		Random rand = new Random();
+		int myNumber = 5;
+		//generate a random number between 1 and 292 million
+		int winningNumber = rand.nextInt(292_000_000);
+		int ticketsBought = 1;
+		while(winningNumber != myNumber) {
+			//buy another ticket
+			winningNumber = rand.nextInt(292_000_000);
+			ticketsBought++;
+			//System.out.println("didnt win");
+		}
+		//If I ever make it down here... I won
+		System.out.println("You won.. and you only had to buy " + ticketsBought + " tickets");
+		
+		
+	}
 
-        // A loop is a code block which runs repeatedly based on a boolean value
-
-        // THE WHILE LOOP
-        //   while (condition) {
-        //       // code to repeat
-        //   }
-        //
-        // While is a PRE CHECK loop - Checked before the loop starts
-        // If the condition is false from the start, the body never runs
-        // If the condition never becomes false, you get an infinite loop
-
-        // Three parts of a loop:
-        // 1. Initialization  — set up a variable(s) before the loop
-        // 2. Condition       — when should the loop continue
-        // 3. Update          — chage the variable(s) involed in the condition
-
-        // Example: Count from 1 to 5
-        int count = 1;              // 1. Initialization
-        while (count <= 5) {        // 2. Condition
-            System.out.println("Count: " + count);
-            count++;                // 3. Update
-        }
-
-        // COUNTING DOWN
-
-        int countdown = 5;
-        while (countdown > 0) {
-            //order matters, do you print before changing or after?
-            System.out.println("Countdown: " + countdown);
-            countdown--;
-        }
-
-        // A very common use of loops is building up a total
-        // We start with 0 and add to it each iteration
-        // Iteration - Cycle of a loop
-
-        int sum = 0;
-        int i = 1;
-        while (i <= 10) {
-            sum = sum + i;  //add 1 to total
-            i++;
-        }
-        System.out.println("Sum of 1 through 10: " + sum);  // should be 55
-
-        // Loops can also count how many times something is true
-        // We use a counter variable and increment it conditionally
-
-        int number = 1;
-        int evenCount = 0;
-        while (number <= 20) {
-            if (number % 2 == 0) {
-                evenCount++;    // only count when the number is even
-            }
-            number++;
-        }
-        System.out.println("Even numbers between 1 and 20: " + evenCount);
-
-
-        //Break and Continue
-        //break keyword exists a loop. Think of it as Break Out of the loop
-        //continue keyword skips to the next iteration of the loop
-        int counter = 1;
-        //infinite loop
-        while(true){
-            if(counter == 2){
-                continue;
-            }
-            if (counter==5){
-                break;
-            }
-            System.out.println("Break - Continue Demo: " + counter);
-            counter++;
-        }
-
-        // COMMON MISTAKE — INFINITE LOOP
-        // If you forget to update your loop variable the condition
-        // never becomes false and the loop runs forever.
-        // The commented code below would be an infinite loop:
-        //
-        //   int x = 1;
-        //   while (x <= 5) {
-        //       System.out.println(x);
-        //       // x is never changed — x <= 5 is always true
-        //   }
-
-
-        // COMMON MISTAKE — OFF BY ONE
-        // An off-by-one error means your loop runs one too many
-        // or one too few times. Check your condition carefully.
-
-        // This prints 1, 2, 3, 4, 5  (correct — 5 iterations)
-        int val = 1;
-        while (val <= 5) {
-            System.out.print(val + " ");
-            val++;
-        }
-        System.out.println();
-
-        // This prints 1, 2, 3, 4  (wrong — only 4 iterations, < vs <=)
-        val = 1;
-        while (val < 5) {
-            System.out.print(val + " ");
-            val++;
-        }
-        System.out.println();
-
-
-        // =========================
-        // STUDENT EXERCISES
-        // =========================
-
-        System.out.println("\n--- Exercises ---");
-
-        // Exercise 1: Print Multiples
-        // Use a while loop to print every multiple of 3 from 3 to 30
-        // Expected output: 3 6 9 12 15 18 21 24 27 30
-
-
-        // Exercise 2: Sum of Odd Numbers
-        // Use a while loop to find the sum of all odd numbers from 1 to 99
-        // Print the result
-
-
-        // Exercise 3: Password Gate
-        // Prompt the user to enter a password
-        // Keep asking until they enter "cs142"
-        // Once they get it right, print "Access granted!"
-
-
-        // Exercise 4: Multiplication Table
-        // Pick any whole number and print its multiplication table from 1 to 10
-        // For example, for 7:
-        //   7 x 1 = 7
-        //   7 x 2 = 14
-        //   ...
-        //   7 x 10 = 70
-
-
-        // Exercise 5: Digit Sum
-        // Given the number 48362, use a while loop and the modulus operator
-        // to find and print the sum of its digits (4 + 8 + 3 + 6 + 2 = 23)
-        // Hint: use % 10 to get the last digit and / 10 to remove it
-        int digits = 48362;
-
-
-        // Exercise 6: Collatz Conjecture
-        // Pick any positive integer n
-        // If n is even: n = n / 2
-        // If n is odd:  n = n * 3 + 1
-        // Repeat until n equals 1, counting the steps
-        // Print each value of n and the total number of steps taken
-        // Try starting with n = 27
-        int n = 27;
-
-
-    }//end main
-
-}//end class
+}
