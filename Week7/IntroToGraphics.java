@@ -54,6 +54,32 @@ public class IntroToGraphics {
     // draw() - PUT YOUR DRAWING CODE HERE
     // 
     // This method is called automatically whenever the window redraws itself.
+    static void draw(Graphics g, int width, int height) {
+    	//drawline takes startPoint endPoint
+    	//g.drawLine(x1, y1, x2, y2)
+    	//g.setColor(COLOR) - Color.BLACK
+    	//horizontal line
+    	g.setColor(randomColor());
+    	//we have access to the width and height of the canvas 
+    	g.drawLine(0, 25, width, 25);
+    	g.setColor(Color.YELLOW);
+    	//what about a vertical line
+    	g.drawLine(width/2, 0, width/2, height);
+    	//diag line
+    	g.setColor(Color.GREEN);
+    	g.drawLine(0, 0, width, height);
+    	//use an rgb value for a color
+    	g.setColor(new Color(200,200,200));
+    	g.drawLine(width, 0, 0, height);
+    	
+    	//lets make a gradient effect
+    	for(int lineX = 0; lineX < width; lineX++) {
+    		int redAmount = lineX * 255 / width;
+    		g.setColor(new Color(redAmount, 0, 100));
+    		g.drawLine(lineX, height * 3/4, lineX, height);
+    	}
+    	
+    }
 
 
     // Leave main() alone It sets up the drawing window for you.
