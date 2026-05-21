@@ -24,7 +24,24 @@ public class IntroToGraphics_Shapes {
 
         // g.drawRect(x, y, w, h)  draws just the OUTLINE of a rectangle
         // g.fillRect(x, y, w, h)  fills the rectangle solid with current color
-
+    	//setColor
+    	g.setColor(Color.BLACK);
+    	g.drawRect(20, 20, 150, 80);
+    	
+    	//another recotangle next to it
+    	g.setColor(Color.GREEN);
+    	g.drawRect(190, 20, 150, 80);
+    	g.setColor(Color.BLUE);
+    	g.fillRect(190, 20, 150, 80);
+    	
+    	//rectangle with a different color border
+    	g.setColor(Color.YELLOW);
+    	g.fillRect(360, 20, 150, 80);
+    	//Lay a blue oval overtop the yellow rectangle
+    	g.setColor(Color.BLUE);
+    	g.fillOval(360, 20, 150, 80);
+    	g.setColor(Color.BLACK);
+    	g.drawRect(360, 20, 150, 80);
 
         
         // OVALS AND CIRCLES
@@ -33,16 +50,39 @@ public class IntroToGraphics_Shapes {
         // g.fillOval(x, y, w, h)  → fills the oval solid with current color
         //
         // (x, y) is the TOP-LEFT corner of the BOUNDING BOX, NOT the center
-
+    	
+    	//g.drawOval(20, 120, 150, 80);
+    	g.fillOval(20, 120, 150, 80);
 
 
         // CENTERING A SHAPE WITH width AND height
-
+    	// we can get the center of the canvas with width/2 height/2
+    	//then we need to factor in the dimension of our shape to center it
+    	int centerX = width / 2;
+    	int centerY = height / 2;
+    	int widthOfShape = 150;
+    	int heightOfShape = 80;
+    	int shapeOriginX = centerX - widthOfShape / 2;
+    	int shapeOriginY = centerY - heightOfShape / 2;
+    	g.setColor(Color.MAGENTA);
+    	g.fillOval(shapeOriginX, shapeOriginY, widthOfShape, heightOfShape);
 
 
         // DRAWING TEXT
-
-
+    	g.drawString("Text to draw", 20, 400);
+    	
+    	
+    	//Gradient with circles
+    	//draw a row of circles with a for loop that change colors
+    	int circleSize = 20;
+    	for(int x = 0; x + circleSize <= width; x+=circleSize) {
+    		double ratio = 256.0 / width;
+    		double blueAmount = x * ratio;
+    		double redAmount = x * ratio;
+    		
+    		g.setColor(new Color((int)redAmount, 150, (int)blueAmount));
+    		g.fillOval(x, height - circleSize, circleSize, circleSize);
+    	}
 
 
         // CHALLENGE IDEAS:
