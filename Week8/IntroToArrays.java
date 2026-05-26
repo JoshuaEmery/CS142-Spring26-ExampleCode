@@ -69,6 +69,23 @@ public class IntroToArrays {
 		System.out.println("Array 2");
 		displayArray(numbers2);
 		
+        //1. Create a method that takes in an int[] and 
+		//returns the sum of all elements in the array
+
+        //2. Create a method that takes in an int[] and 
+		//returns the average value of the element in the array
+
+
+        //3. Create a method that takes in an int[] and a searchValue. 
+		//Return the index of the searchValue IF it exists in the array
+        //return -1 if it is not found
+
+        //4. Create a method that takes in an int[] and 
+		//returns a new int[] with only the values that are above average in value
+
+        //5. Create a method that takes in an int[] and 
+		//returns the LARGEST value in the array
+		
 	}
 	static int[] randomNumbers(int size) {
 		//create a new empty array with size length
@@ -88,22 +105,6 @@ public class IntroToArrays {
 			System.out.println("Index: " + i + " Element: " + numbers[i]);
 		}
 	}
-	        //Lets create some methods
-
-        //Create a method that takes in a size and returns an int array of SIZE random values between 0-99 (inclusive)
-
-        //Create a method that takes in an int array and prints out the contents of the array including the index
-
-        //Create a method that takes in an int[] and returns the sum of all elements in the array
-
-        //Create a method that takes in an int[] and returns the average value of the element in the array
-
-
-        //Create a method that takes in an int[] and a searchValue. Return the index of the searchValue IF it exists in the array
-        //return -1 if it is not found
-
-        //Create a method that takes in an int[] and returns a new int[] with only the values that are above average in value
-
-        //Create a method that takes in an int[] and returns the LARGEST value in the array
+	
 
 }
