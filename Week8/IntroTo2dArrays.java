@@ -11,6 +11,16 @@ public class IntroTo2dArrays {
 		
 		//dataType[][] grid = new dataType[rows][columns]
 		int[][] grid = new int[3][4];
+		grid[0][1] = 10;
+		grid[1][1] = 20;
+		displayGrid(grid);
+		//If the values for your array are known
+		int[][] grid2 = {
+				{1, 2, 3},
+				{4, 5, 6},
+				{7, 8, 9}
+		};
+		displayGrid(grid2);
 		
 		
 	}
@@ -21,10 +31,35 @@ public class IntroTo2dArrays {
 		for(int i = 0; i < matrix.length; i++) {
 			//if you look at matrix[i].length you get the columns
 			for(int j = 0; j < matrix[i].length; j++) {
-				System.out.print("i: " + i + " j: " + j + " = " + matrix[i][j]);
+				System.out.print("i: " + i + " j: " + j + " = " + matrix[i][j] + "\t");
 			}
 			System.out.println();
 		}
 	}
+	//lets make a method that takes in rows and columns and returns
+	//a 2d array with random numbers from 0-99
+	
+	//create a method that takes in a 2d int array and returns the sum
+	//of all elements in the array
+	
+	//Extra Credit
+	//create a method that takes a 2d in array and returns a single dimension
+	//int array where each element is the sum of all elements in the 
+	//corresponding column
+	
+	//for example
+	/*
+	 * Input
+	 * 1, 4, 5
+	 * 2, 10, 6
+	 * 3, 5, 7
+	 * 
+	 * 1 + 2 + 3 = 6
+	 * 4 + 10 + 5 = 19
+	 * 5 + 6 + 7 = 18
+	 * output: [6, 19, 18]
+	 */
+	 */
+	
 
 }
