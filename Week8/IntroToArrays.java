@@ -55,7 +55,9 @@ public class IntroToArrays {
 		for (String day : days) {
 			System.out.println(day);
 		}
-		
+		for(int i = grades.length - 1; i >= 0; i--) {
+			System.out.println("Index: " + i + " Element: " + grades[i]);
+		}
 		//lets make some methods
 		//I want a method that takes in a size and returns int array
 		//with size random numbers between 0 - 99 inclusive		
@@ -87,6 +89,26 @@ public class IntroToArrays {
 		//returns the LARGEST value in the array
 		
 	}
+	
+	//calculate the average value of elements in an int[]
+	static double calcAverage(int[] numbers) {
+		int sum = sumElements(numbers);
+		return sum / numbers.length;
+	}
+	
+	//sum all elements in array
+	static int sumElements(int[] numbers) {
+		//variable to track the total
+		int total = 0;
+		//for loop to access the elements
+		for (int i = 0; i < numbers.length; i++) {
+			//add each element to total
+			total = total + numbers[i];
+		}
+		//when we exit the loop the total has been calculated
+		return total;
+	}
+	
 	static int[] randomNumbers(int size) {
 		//create a new empty array with size length
 		int[] result = new int[size];
