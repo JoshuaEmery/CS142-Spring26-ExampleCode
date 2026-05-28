@@ -42,8 +42,8 @@ public class IntroTo2dArrays {
 	//create a method that takes in a 2d int array and returns the sum
 	//of all elements in the array
 	
-	//Extra Credit
-	//create a method that takes a 2d in array and returns a single dimension
+	//Extra Credit Problems
+	//1. create a method that takes a 2d int array and returns a single dimension
 	//int array where each element is the sum of all elements in the 
 	//corresponding column
 	
@@ -59,6 +59,19 @@ public class IntroTo2dArrays {
 	 * 5 + 6 + 7 = 18
 	 * output: [6, 19, 18]
 	 */
+		//Extra Credit Problems
+		//2. create a method that takes a 2d char array representing a tic tac toe board
+		//return true if the board contains a winner false if it does not
+		//either 'X' or 'O' could win.
+	/*
+	 * 'X', 'O', ''
+	 * '', 'X', '0' 
+	 * '', '',  'X' 
+	 * 
+	 * If you want even more extra credit, research how to throw an exception
+	 * and throw and exception if the tic tac toe board is in an invalid state
+	 * The count of any given character should always be within one of the 
+	 * count of the other character... Both characters cannot win
 	 */
 	
 
