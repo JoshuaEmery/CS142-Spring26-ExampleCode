@@ -9,10 +9,14 @@ public class AppTwo {
 		String quad = p1.quadrant();
 		System.out.println("P1 lies in " + quad);
 		Point p2 = new Point(-5, 10);
+		double temp = p2.getX();
+		temp = 100;
 		//Static methods are called on the class ITSELF 
 		double distance = Point.distanceBetweenPoints(p1, p2);
 		System.out.println("Distance: " + distance);
 		
+		//How to get input from a user and repeat the process if
+		//they do not follow instructions
 		//lets say we want to get X and Y from the user and make a new
 		//instance of point
 		//to get input from the console we need a scanner
@@ -43,8 +47,15 @@ public class AppTwo {
 		Point p3 = new Point(x, y);
 		//println looks inside of the variable for a method called toString()
 		System.out.println(p3);
-		
-		
+		//Lets make a line
+		Line line = new Line(p1, p2);
+		Line line2 = new Line(p1, p2);
+		//if you change a ref variable it is changed FOREVER
+		//Point linePoint1 = line.getP1();
+		//linePoint1 = new Point(100,100);
+		System.out.println(line);
+		//This calls the .equals method
+		Point3d p3d = new Point3d(-5, 4, 10);
 
 	}
 	static Double tryParseDouble(String input) {
@@ -57,8 +68,6 @@ public class AppTwo {
 		}
 		catch(Exception ex) {
 			return null;
-		}
-		
+		}	
 	}
-
 }
