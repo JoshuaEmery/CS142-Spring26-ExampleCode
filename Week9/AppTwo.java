@@ -32,13 +32,18 @@ public class AppTwo {
 		//use scanner to get a string from the user
 		String inputY = scanner.nextLine();
 		//parse this to whatever number type you need
-		Double y = tryParseDouble(inputX);
+		Double y = tryParseDouble(inputY);
 		while(y == null) {
 			System.out.println("You messed up! Do better!");
 			System.out.println("Please enter a value for y");
 			inputY = scanner.nextLine();
 			y = tryParseDouble(inputY);
-		}	
+		}
+		//Down here what do I know?
+		Point p3 = new Point(x, y);
+		//println looks inside of the variable for a method called toString()
+		System.out.println(p3);
+		
 		
 
 	}
