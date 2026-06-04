@@ -42,7 +42,7 @@ public class Point {
      * Returns which quadrant this point falls in.
      * Returns "On Axis" if the point lies on the x or y axis.
      */
-    private String quadrant() {
+    public String quadrant() {
         if (x == 0 && y == 0) return "Origin";
         if (x == 0) return "On Y-Axis";
         if (y == 0) return "On X-Axis";
