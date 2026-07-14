@@ -8,18 +8,24 @@ public class Methods {
 		//sysout takes a string as a argument and returns nothing
 		//calling sysout
 		//System.out.println(String input)
-		
-		//methods with returns - we have used
-		//Math.pow takes a double base and a double exp and returns a double
-		//Math.pow(base, exp)
-		//calling Math.pow and capturing the return in a variable
-		//double area = Math.Pow(length, 2);
-		//Math library
-		//https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html
-	
-		//math.sqrt()
-		//math.floor()
-		//math.ceil()
+
+		//Calling Methods with returns
+		//Math.pow() takes a double base and a double exponent, returns a double
+		//Math.pow(double base, double exp)
+		int length = 10;
+		double area = Math.pow(length, 2);  // squares length
+
+		//math.sqrt() takes a double and returns a double (the square root)
+		//Math.sqrt(double input)
+		double root = Math.sqrt(25);  // root = 5.0
+
+		//math.floor() takes a double and returns a double (rounds DOWN)
+		//Math.floor(double input)
+		double down = Math.floor(4.7);  // down = 4.0
+
+		//math.ceil() takes a double and returns a double (rounds UP)
+		//Math.ceil(double input)
+		double up = Math.ceil(4.2);  // up = 5.0
 		
 		
 		// Calling a void method
